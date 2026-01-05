@@ -1,0 +1,28 @@
+\begin{longtable}{lrrrrrrr}
+\caption{Error Reduction (ER) for V: RMSE(LSTM) − RMSE(xLSTM).} \label{tab:er_V} \\
+\toprule
+feature_set & n_features & horizon & rmse_lstm & r2_lstm & rmse_xlstm & r2_xlstm & er_rmse \\
+\midrule
+\endfirsthead
+\caption[]{Error Reduction (ER) for V: RMSE(LSTM) − RMSE(xLSTM).} \\
+\toprule
+feature_set & n_features & horizon & rmse_lstm & r2_lstm & rmse_xlstm & r2_xlstm & er_rmse \\
+\midrule
+\endhead
+\midrule
+\multicolumn{8}{r}{Continued on next page} \\
+\midrule
+\endfoot
+\bottomrule
+\endlastfoot
+price_only & 1 & 1 & 3.0681 & 0.9930 & 3.1703 & 0.9925 & -0.1022 \\
+price_only & 1 & 3 & 4.2802 & 0.9862 & 4.2585 & 0.9863 & 0.0217 \\
+price_only & 1 & 5 & 5.1168 & 0.9801 & 5.1706 & 0.9797 & -0.0538 \\
+price_only & 1 & 10 & 6.7096 & 0.9651 & 6.7138 & 0.9650 & -0.0042 \\
+price_only & 1 & 15 & 8.0589 & 0.9488 & 7.8511 & 0.9514 & 0.2079 \\
+price_plus_sentiment & 5 & 1 & 3.6125 & 0.9903 & 5.4918 & 0.9775 & -1.8793 \\
+price_plus_sentiment & 5 & 3 & 4.6845 & 0.9835 & 5.2037 & 0.9796 & -0.5192 \\
+price_plus_sentiment & 5 & 5 & 5.9792 & 0.9728 & 6.5967 & 0.9669 & -0.6175 \\
+price_plus_sentiment & 5 & 10 & 8.8117 & 0.9397 & 7.9252 & 0.9513 & 0.8866 \\
+price_plus_sentiment & 5 & 15 & 10.0934 & 0.9197 & 9.8636 & 0.9233 & 0.2298 \\
+\end{longtable}

@@ -1,0 +1,20 @@
+{
+  "window_size": 60,
+  "n_features": 1,
+  "horizon": 15,
+  "units": 64,
+  "dropout": 0.0,
+  "optimizer": "adam",
+  "learning_rate": 0.002250041899458283,
+  "loss": "mse",
+  "xlstm_num_blocks": 8,
+  "xlstm_slstm_at": [
+    7
+  ],
+  "xlstm_mlstm_conv1d_kernel_size": 4,
+  "xlstm_mlstm_qkv_proj_blocksize": 2,
+  "xlstm_mlstm_num_heads": 8,
+  "xlstm_mlstm_proj_factor": 1.0,
+  "xlstm_slstm_conv1d_kernel": 4,
+  "xlstm_slstm_num_heads": 1
+}

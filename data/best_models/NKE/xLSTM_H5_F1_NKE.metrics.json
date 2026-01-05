@@ -1,0 +1,46 @@
+{
+  "ticker": "NKE",
+  "model_type": "xLSTM",
+  "horizon": 5,
+  "feature_key": "F1",
+  "feature_cols": [
+    "Close"
+  ],
+  "n_features": 1,
+  "study_name": "xLSTM_H5_F1",
+  "optuna_best_trial": {
+    "trial_number": 127,
+    "values": [
+      0.03770397067080016,
+      0.9405370354652405
+    ],
+    "params": {
+      "units": 96,
+      "xlstm_num_blocks": 4,
+      "slstm_mode": "m_only",
+      "dropout": 0.1,
+      "optimizer": "adam",
+      "learning_rate": 0.00019585175864643227,
+      "xlstm_mlstm_conv1d_kernel_size": 4,
+      "xlstm_mlstm_qkv_proj_blocksize": 2,
+      "xlstm_mlstm_proj_factor": 2.0,
+      "xlstm_mlstm_num_heads": 1,
+      "xlstm_slstm_conv1d_kernel": 3,
+      "xlstm_slstm_num_heads": 1
+    }
+  },
+  "test_level": {
+    "rmse": 3.8658030033111572,
+    "r2": 0.9319764375686646
+  },
+  "artifacts": {
+    "checkpoint": "..\\data\\best_models\\NKE\\xLSTM_H5_F1_NKE.pt",
+    "config": "..\\data\\best_models\\NKE\\xLSTM_H5_F1_NKE.config.json",
+    "metrics": "..\\data\\best_models\\NKE\\xLSTM_H5_F1_NKE.metrics.json",
+    "history": "..\\data\\best_models\\NKE\\xLSTM_H5_F1_NKE.history.json",
+    "plot_pdf": "..\\data\\Figures\\Plots\\NKE\\xLSTM_H5_F1_NKE.pdf",
+    "plot_png": "..\\data\\Figures\\Plots\\NKE\\xLSTM_H5_F1_NKE.png",
+    "table_csv": "..\\data\\Figures\\Tables\\NKE\\xLSTM_H5_F1_NKE.csv",
+    "table_tex": "..\\data\\Figures\\Tables\\NKE\\xLSTM_H5_F1_NKE.tex"
+  }
+}

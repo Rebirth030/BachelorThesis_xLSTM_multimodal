@@ -1,0 +1,11 @@
+{
+  "window_size": 60,
+  "n_features": 5,
+  "horizon": 10,
+  "units": 64,
+  "dropout": 0.0,
+  "optimizer": "adamW",
+  "learning_rate": 0.0010881174770660878,
+  "loss": "mse",
+  "lstm_layers": 4
+}

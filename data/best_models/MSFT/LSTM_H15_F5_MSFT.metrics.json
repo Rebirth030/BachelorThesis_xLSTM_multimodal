@@ -1,0 +1,43 @@
+{
+  "ticker": "MSFT",
+  "model_type": "LSTM",
+  "horizon": 15,
+  "feature_key": "F5",
+  "feature_cols": [
+    "Close",
+    "pos_mean",
+    "neut_mean",
+    "neg_mean",
+    "news_count"
+  ],
+  "n_features": 5,
+  "study_name": "LSTM_H15_F5",
+  "optuna_best_trial": {
+    "trial_number": 115,
+    "values": [
+      0.061414364601346264,
+      0.855974018573761
+    ],
+    "params": {
+      "units": 128,
+      "lstm_layers": 4,
+      "dropout": 0.1,
+      "optimizer": "adam",
+      "learning_rate": 0.0021090311339922512
+    }
+  },
+  "test_level": {
+    "rmse": 15.717544555664062,
+    "r2": 0.9546469449996948
+  },
+  "artifacts": {
+    "checkpoint": "..\\data\\best_models\\MSFT\\LSTM_H15_F5_MSFT.pt",
+    "config": "..\\data\\best_models\\MSFT\\LSTM_H15_F5_MSFT.config.json",
+    "metrics": "..\\data\\best_models\\MSFT\\LSTM_H15_F5_MSFT.metrics.json",
+    "history": "..\\data\\best_models\\MSFT\\LSTM_H15_F5_MSFT.history.json",
+    "plot_pdf": "..\\data\\Figures\\Plots\\MSFT\\LSTM_H15_F5_MSFT.pdf",
+    "plot_png": "..\\data\\Figures\\Plots\\MSFT\\LSTM_H15_F5_MSFT.png",
+    "table_csv": "..\\data\\Figures\\Tables\\MSFT\\LSTM_H15_F5_MSFT.csv",
+    "table_tex": "..\\data\\Figures\\Tables\\MSFT\\LSTM_H15_F5_MSFT.tex"
+  }
+}

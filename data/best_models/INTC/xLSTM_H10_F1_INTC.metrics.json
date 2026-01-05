@@ -1,0 +1,46 @@
+{
+  "ticker": "INTC",
+  "model_type": "xLSTM",
+  "horizon": 10,
+  "feature_key": "F1",
+  "feature_cols": [
+    "Close"
+  ],
+  "n_features": 1,
+  "study_name": "xLSTM_H10_F1",
+  "optuna_best_trial": {
+    "trial_number": 179,
+    "values": [
+      0.05069856835904881,
+      0.897284209728241
+    ],
+    "params": {
+      "units": 128,
+      "xlstm_num_blocks": 8,
+      "slstm_mode": "m_only",
+      "dropout": 0.2,
+      "optimizer": "adam",
+      "learning_rate": 0.00019616244876746633,
+      "xlstm_mlstm_conv1d_kernel_size": 4,
+      "xlstm_mlstm_qkv_proj_blocksize": 2,
+      "xlstm_mlstm_proj_factor": 1.0,
+      "xlstm_mlstm_num_heads": 2,
+      "xlstm_slstm_conv1d_kernel": 4,
+      "xlstm_slstm_num_heads": 8
+    }
+  },
+  "test_level": {
+    "rmse": 2.195300817489624,
+    "r2": 0.9141690731048584
+  },
+  "artifacts": {
+    "checkpoint": "..\\data\\best_models\\INTC\\xLSTM_H10_F1_INTC.pt",
+    "config": "..\\data\\best_models\\INTC\\xLSTM_H10_F1_INTC.config.json",
+    "metrics": "..\\data\\best_models\\INTC\\xLSTM_H10_F1_INTC.metrics.json",
+    "history": "..\\data\\best_models\\INTC\\xLSTM_H10_F1_INTC.history.json",
+    "plot_pdf": "..\\data\\Figures\\Plots\\INTC\\xLSTM_H10_F1_INTC.pdf",
+    "plot_png": "..\\data\\Figures\\Plots\\INTC\\xLSTM_H10_F1_INTC.png",
+    "table_csv": "..\\data\\Figures\\Tables\\INTC\\xLSTM_H10_F1_INTC.csv",
+    "table_tex": "..\\data\\Figures\\Tables\\INTC\\xLSTM_H10_F1_INTC.tex"
+  }
+}

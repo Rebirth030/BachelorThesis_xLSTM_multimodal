@@ -1,0 +1,46 @@
+{
+  "ticker": "JNJ",
+  "model_type": "xLSTM",
+  "horizon": 3,
+  "feature_key": "F1",
+  "feature_cols": [
+    "Close"
+  ],
+  "n_features": 1,
+  "study_name": "xLSTM_H3_F1",
+  "optuna_best_trial": {
+    "trial_number": 18,
+    "values": [
+      0.031359614411729325,
+      0.9580934643745422
+    ],
+    "params": {
+      "units": 128,
+      "xlstm_num_blocks": 6,
+      "slstm_mode": "m_only",
+      "dropout": 0.2,
+      "optimizer": "adamW",
+      "learning_rate": 0.0002287488101674769,
+      "xlstm_mlstm_conv1d_kernel_size": 2,
+      "xlstm_mlstm_qkv_proj_blocksize": 2,
+      "xlstm_mlstm_proj_factor": 1.0,
+      "xlstm_mlstm_num_heads": 8,
+      "xlstm_slstm_conv1d_kernel": 3,
+      "xlstm_slstm_num_heads": 1
+    }
+  },
+  "test_level": {
+    "rmse": 2.248170852661133,
+    "r2": 0.9023022651672363
+  },
+  "artifacts": {
+    "checkpoint": "..\\data\\best_models\\JNJ\\xLSTM_H3_F1_JNJ.pt",
+    "config": "..\\data\\best_models\\JNJ\\xLSTM_H3_F1_JNJ.config.json",
+    "metrics": "..\\data\\best_models\\JNJ\\xLSTM_H3_F1_JNJ.metrics.json",
+    "history": "..\\data\\best_models\\JNJ\\xLSTM_H3_F1_JNJ.history.json",
+    "plot_pdf": "..\\data\\Figures\\Plots\\JNJ\\xLSTM_H3_F1_JNJ.pdf",
+    "plot_png": "..\\data\\Figures\\Plots\\JNJ\\xLSTM_H3_F1_JNJ.png",
+    "table_csv": "..\\data\\Figures\\Tables\\JNJ\\xLSTM_H3_F1_JNJ.csv",
+    "table_tex": "..\\data\\Figures\\Tables\\JNJ\\xLSTM_H3_F1_JNJ.tex"
+  }
+}

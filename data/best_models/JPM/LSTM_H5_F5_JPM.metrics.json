@@ -1,0 +1,43 @@
+{
+  "ticker": "JPM",
+  "model_type": "LSTM",
+  "horizon": 5,
+  "feature_key": "F5",
+  "feature_cols": [
+    "Close",
+    "pos_mean",
+    "neut_mean",
+    "neg_mean",
+    "news_count"
+  ],
+  "n_features": 5,
+  "study_name": "LSTM_H5_F5",
+  "optuna_best_trial": {
+    "trial_number": 164,
+    "values": [
+      0.038152846837761906,
+      0.9391127824783325
+    ],
+    "params": {
+      "units": 32,
+      "lstm_layers": 1,
+      "dropout": 0.0,
+      "optimizer": "adamW",
+      "learning_rate": 0.002685259544189702
+    }
+  },
+  "test_level": {
+    "rmse": 4.652688503265381,
+    "r2": 0.9878799319267273
+  },
+  "artifacts": {
+    "checkpoint": "..\\data\\best_models\\JPM\\LSTM_H5_F5_JPM.pt",
+    "config": "..\\data\\best_models\\JPM\\LSTM_H5_F5_JPM.config.json",
+    "metrics": "..\\data\\best_models\\JPM\\LSTM_H5_F5_JPM.metrics.json",
+    "history": "..\\data\\best_models\\JPM\\LSTM_H5_F5_JPM.history.json",
+    "plot_pdf": "..\\data\\Figures\\Plots\\JPM\\LSTM_H5_F5_JPM.pdf",
+    "plot_png": "..\\data\\Figures\\Plots\\JPM\\LSTM_H5_F5_JPM.png",
+    "table_csv": "..\\data\\Figures\\Tables\\JPM\\LSTM_H5_F5_JPM.csv",
+    "table_tex": "..\\data\\Figures\\Tables\\JPM\\LSTM_H5_F5_JPM.tex"
+  }
+}

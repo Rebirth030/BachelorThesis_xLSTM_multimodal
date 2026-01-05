@@ -1,0 +1,39 @@
+{
+  "ticker": "KO",
+  "model_type": "LSTM",
+  "horizon": 3,
+  "feature_key": "F1",
+  "feature_cols": [
+    "Close"
+  ],
+  "n_features": 1,
+  "study_name": "LSTM_H3_F1",
+  "optuna_best_trial": {
+    "trial_number": 158,
+    "values": [
+      0.031286278170977184,
+      0.9582892060279846
+    ],
+    "params": {
+      "units": 128,
+      "lstm_layers": 4,
+      "dropout": 0.2,
+      "optimizer": "adamW",
+      "learning_rate": 0.002655402589812554
+    }
+  },
+  "test_level": {
+    "rmse": 0.8150955438613892,
+    "r2": 0.960719883441925
+  },
+  "artifacts": {
+    "checkpoint": "..\\data\\best_models\\KO\\LSTM_H3_F1_KO.pt",
+    "config": "..\\data\\best_models\\KO\\LSTM_H3_F1_KO.config.json",
+    "metrics": "..\\data\\best_models\\KO\\LSTM_H3_F1_KO.metrics.json",
+    "history": "..\\data\\best_models\\KO\\LSTM_H3_F1_KO.history.json",
+    "plot_pdf": "..\\data\\Figures\\Plots\\KO\\LSTM_H3_F1_KO.pdf",
+    "plot_png": "..\\data\\Figures\\Plots\\KO\\LSTM_H3_F1_KO.png",
+    "table_csv": "..\\data\\Figures\\Tables\\KO\\LSTM_H3_F1_KO.csv",
+    "table_tex": "..\\data\\Figures\\Tables\\KO\\LSTM_H3_F1_KO.tex"
+  }
+}

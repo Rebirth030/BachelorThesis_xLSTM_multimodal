@@ -1,0 +1,43 @@
+{
+  "ticker": "NKE",
+  "model_type": "LSTM",
+  "horizon": 10,
+  "feature_key": "F5",
+  "feature_cols": [
+    "Close",
+    "pos_mean",
+    "neut_mean",
+    "neg_mean",
+    "news_count"
+  ],
+  "n_features": 5,
+  "study_name": "LSTM_H10_F5",
+  "optuna_best_trial": {
+    "trial_number": 54,
+    "values": [
+      0.051122030887509495,
+      0.8955612182617188
+    ],
+    "params": {
+      "units": 64,
+      "lstm_layers": 4,
+      "dropout": 0.0,
+      "optimizer": "adamW",
+      "learning_rate": 0.0010881174770660878
+    }
+  },
+  "test_level": {
+    "rmse": 5.72244119644165,
+    "r2": 0.8487663269042969
+  },
+  "artifacts": {
+    "checkpoint": "..\\data\\best_models\\NKE\\LSTM_H10_F5_NKE.pt",
+    "config": "..\\data\\best_models\\NKE\\LSTM_H10_F5_NKE.config.json",
+    "metrics": "..\\data\\best_models\\NKE\\LSTM_H10_F5_NKE.metrics.json",
+    "history": "..\\data\\best_models\\NKE\\LSTM_H10_F5_NKE.history.json",
+    "plot_pdf": "..\\data\\Figures\\Plots\\NKE\\LSTM_H10_F5_NKE.pdf",
+    "plot_png": "..\\data\\Figures\\Plots\\NKE\\LSTM_H10_F5_NKE.png",
+    "table_csv": "..\\data\\Figures\\Tables\\NKE\\LSTM_H10_F5_NKE.csv",
+    "table_tex": "..\\data\\Figures\\Tables\\NKE\\LSTM_H10_F5_NKE.tex"
+  }
+}

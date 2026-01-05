@@ -1,0 +1,39 @@
+{
+  "ticker": "JPM",
+  "model_type": "LSTM",
+  "horizon": 1,
+  "feature_key": "F1",
+  "feature_cols": [
+    "Close"
+  ],
+  "n_features": 1,
+  "study_name": "LSTM_H1_F1",
+  "optuna_best_trial": {
+    "trial_number": 171,
+    "values": [
+      0.023422809059640486,
+      0.9761577844619751
+    ],
+    "params": {
+      "units": 64,
+      "lstm_layers": 2,
+      "dropout": 0.1,
+      "optimizer": "adamW",
+      "learning_rate": 0.001959489725330879
+    }
+  },
+  "test_level": {
+    "rmse": 2.386153221130371,
+    "r2": 0.9968569278717041
+  },
+  "artifacts": {
+    "checkpoint": "..\\data\\best_models\\JPM\\LSTM_H1_F1_JPM.pt",
+    "config": "..\\data\\best_models\\JPM\\LSTM_H1_F1_JPM.config.json",
+    "metrics": "..\\data\\best_models\\JPM\\LSTM_H1_F1_JPM.metrics.json",
+    "history": "..\\data\\best_models\\JPM\\LSTM_H1_F1_JPM.history.json",
+    "plot_pdf": "..\\data\\Figures\\Plots\\JPM\\LSTM_H1_F1_JPM.pdf",
+    "plot_png": "..\\data\\Figures\\Plots\\JPM\\LSTM_H1_F1_JPM.png",
+    "table_csv": "..\\data\\Figures\\Tables\\JPM\\LSTM_H1_F1_JPM.csv",
+    "table_tex": "..\\data\\Figures\\Tables\\JPM\\LSTM_H1_F1_JPM.tex"
+  }
+}

@@ -1,0 +1,38 @@
+\begin{longtable}{lllrrrr}
+\caption{Test results for MSFT (RMSE and R\^2 on denormalised level).} \label{tab:results_MSFT} \\
+\toprule
+asset & model_type & feature_set & n_features & horizon & test_rmse_level & test_r2_level \\
+\midrule
+\endfirsthead
+\caption[]{Test results for MSFT (RMSE and R\^2 on denormalised level).} \\
+\toprule
+asset & model_type & feature_set & n_features & horizon & test_rmse_level & test_r2_level \\
+\midrule
+\endhead
+\midrule
+\multicolumn{7}{r}{Continued on next page} \\
+\midrule
+\endfoot
+\bottomrule
+\endlastfoot
+MSFT & LSTM & price_only & 1 & 1 & 5.6572 & 0.9941 \\
+MSFT & LSTM & price_only & 1 & 3 & 7.4391 & 0.9898 \\
+MSFT & LSTM & price_only & 1 & 5 & 8.8446 & 0.9856 \\
+MSFT & LSTM & price_only & 1 & 10 & 12.1285 & 0.9730 \\
+MSFT & LSTM & price_only & 1 & 15 & 14.1686 & 0.9631 \\
+MSFT & LSTM & price_plus_sentiment & 5 & 1 & 5.7505 & 0.9939 \\
+MSFT & LSTM & price_plus_sentiment & 5 & 3 & 8.6195 & 0.9864 \\
+MSFT & LSTM & price_plus_sentiment & 5 & 5 & 11.4867 & 0.9758 \\
+MSFT & LSTM & price_plus_sentiment & 5 & 10 & 24.8832 & 0.8863 \\
+MSFT & LSTM & price_plus_sentiment & 5 & 15 & 15.7175 & 0.9546 \\
+MSFT & xLSTM & price_only & 1 & 1 & 5.3970 & 0.9947 \\
+MSFT & xLSTM & price_only & 1 & 3 & 7.3382 & 0.9901 \\
+MSFT & xLSTM & price_only & 1 & 5 & 8.8360 & 0.9857 \\
+MSFT & xLSTM & price_only & 1 & 10 & 11.5940 & 0.9753 \\
+MSFT & xLSTM & price_only & 1 & 15 & 14.3056 & 0.9624 \\
+MSFT & xLSTM & price_plus_sentiment & 5 & 1 & 20.8192 & 0.9204 \\
+MSFT & xLSTM & price_plus_sentiment & 5 & 3 & 21.4994 & 0.9152 \\
+MSFT & xLSTM & price_plus_sentiment & 5 & 5 & 21.8241 & 0.9126 \\
+MSFT & xLSTM & price_plus_sentiment & 5 & 10 & 23.4566 & 0.8990 \\
+MSFT & xLSTM & price_plus_sentiment & 5 & 15 & 21.8210 & 0.9126 \\
+\end{longtable}

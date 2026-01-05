@@ -1,0 +1,38 @@
+\begin{longtable}{lllrrrr}
+\caption{Test results for IBM (RMSE and R\^2 on denormalised level).} \label{tab:results_IBM} \\
+\toprule
+asset & model_type & feature_set & n_features & horizon & test_rmse_level & test_r2_level \\
+\midrule
+\endfirsthead
+\caption[]{Test results for IBM (RMSE and R\^2 on denormalised level).} \\
+\toprule
+asset & model_type & feature_set & n_features & horizon & test_rmse_level & test_r2_level \\
+\midrule
+\endhead
+\midrule
+\multicolumn{7}{r}{Continued on next page} \\
+\midrule
+\endfoot
+\bottomrule
+\endlastfoot
+IBM & LSTM & price_only & 1 & 1 & 2.4366 & 0.9955 \\
+IBM & LSTM & price_only & 1 & 3 & 3.4775 & 0.9907 \\
+IBM & LSTM & price_only & 1 & 5 & 4.0096 & 0.9876 \\
+IBM & LSTM & price_only & 1 & 10 & 5.4827 & 0.9765 \\
+IBM & LSTM & price_only & 1 & 15 & 6.9044 & 0.9623 \\
+IBM & LSTM & price_plus_sentiment & 5 & 1 & 2.4872 & 0.9953 \\
+IBM & LSTM & price_plus_sentiment & 5 & 3 & 3.5198 & 0.9905 \\
+IBM & LSTM & price_plus_sentiment & 5 & 5 & 4.1449 & 0.9867 \\
+IBM & LSTM & price_plus_sentiment & 5 & 10 & 5.7563 & 0.9741 \\
+IBM & LSTM & price_plus_sentiment & 5 & 15 & 7.5240 & 0.9552 \\
+IBM & xLSTM & price_only & 1 & 1 & 2.5405 & 0.9951 \\
+IBM & xLSTM & price_only & 1 & 3 & 3.4080 & 0.9911 \\
+IBM & xLSTM & price_only & 1 & 5 & 4.1175 & 0.9869 \\
+IBM & xLSTM & price_only & 1 & 10 & 5.5483 & 0.9759 \\
+IBM & xLSTM & price_only & 1 & 15 & 7.0201 & 0.9610 \\
+IBM & xLSTM & price_plus_sentiment & 5 & 1 & 3.3870 & 0.9913 \\
+IBM & xLSTM & price_plus_sentiment & 5 & 3 & 3.8379 & 0.9887 \\
+IBM & xLSTM & price_plus_sentiment & 5 & 5 & 4.3064 & 0.9857 \\
+IBM & xLSTM & price_plus_sentiment & 5 & 10 & 5.9620 & 0.9722 \\
+IBM & xLSTM & price_plus_sentiment & 5 & 15 & 7.3551 & 0.9572 \\
+\end{longtable}

@@ -1,0 +1,50 @@
+{
+  "ticker": "JNJ",
+  "model_type": "xLSTM",
+  "horizon": 3,
+  "feature_key": "F5",
+  "feature_cols": [
+    "Close",
+    "pos_mean",
+    "neut_mean",
+    "neg_mean",
+    "news_count"
+  ],
+  "n_features": 5,
+  "study_name": "xLSTM_H3_F5",
+  "optuna_best_trial": {
+    "trial_number": 82,
+    "values": [
+      0.03394029947661194,
+      0.9509124159812927
+    ],
+    "params": {
+      "units": 32,
+      "xlstm_num_blocks": 2,
+      "slstm_mode": "m_only",
+      "dropout": 0.2,
+      "optimizer": "adam",
+      "learning_rate": 0.0018630433031506784,
+      "xlstm_mlstm_conv1d_kernel_size": 4,
+      "xlstm_mlstm_qkv_proj_blocksize": 4,
+      "xlstm_mlstm_proj_factor": 2.0,
+      "xlstm_mlstm_num_heads": 1,
+      "xlstm_slstm_conv1d_kernel": 4,
+      "xlstm_slstm_num_heads": 1
+    }
+  },
+  "test_level": {
+    "rmse": 2.8832287788391113,
+    "r2": 0.8393117189407349
+  },
+  "artifacts": {
+    "checkpoint": "..\\data\\best_models\\JNJ\\xLSTM_H3_F5_JNJ.pt",
+    "config": "..\\data\\best_models\\JNJ\\xLSTM_H3_F5_JNJ.config.json",
+    "metrics": "..\\data\\best_models\\JNJ\\xLSTM_H3_F5_JNJ.metrics.json",
+    "history": "..\\data\\best_models\\JNJ\\xLSTM_H3_F5_JNJ.history.json",
+    "plot_pdf": "..\\data\\Figures\\Plots\\JNJ\\xLSTM_H3_F5_JNJ.pdf",
+    "plot_png": "..\\data\\Figures\\Plots\\JNJ\\xLSTM_H3_F5_JNJ.png",
+    "table_csv": "..\\data\\Figures\\Tables\\JNJ\\xLSTM_H3_F5_JNJ.csv",
+    "table_tex": "..\\data\\Figures\\Tables\\JNJ\\xLSTM_H3_F5_JNJ.tex"
+  }
+}

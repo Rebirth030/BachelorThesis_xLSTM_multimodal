@@ -1,0 +1,39 @@
+{
+  "ticker": "INTC",
+  "model_type": "LSTM",
+  "horizon": 1,
+  "feature_key": "F1",
+  "feature_cols": [
+    "Close"
+  ],
+  "n_features": 1,
+  "study_name": "LSTM_H1_F1",
+  "optuna_best_trial": {
+    "trial_number": 171,
+    "values": [
+      0.023422809059640486,
+      0.9761577844619751
+    ],
+    "params": {
+      "units": 64,
+      "lstm_layers": 2,
+      "dropout": 0.1,
+      "optimizer": "adamW",
+      "learning_rate": 0.001959489725330879
+    }
+  },
+  "test_level": {
+    "rmse": 0.9140065908432007,
+    "r2": 0.9855501651763916
+  },
+  "artifacts": {
+    "checkpoint": "..\\data\\best_models\\INTC\\LSTM_H1_F1_INTC.pt",
+    "config": "..\\data\\best_models\\INTC\\LSTM_H1_F1_INTC.config.json",
+    "metrics": "..\\data\\best_models\\INTC\\LSTM_H1_F1_INTC.metrics.json",
+    "history": "..\\data\\best_models\\INTC\\LSTM_H1_F1_INTC.history.json",
+    "plot_pdf": "..\\data\\Figures\\Plots\\INTC\\LSTM_H1_F1_INTC.pdf",
+    "plot_png": "..\\data\\Figures\\Plots\\INTC\\LSTM_H1_F1_INTC.png",
+    "table_csv": "..\\data\\Figures\\Tables\\INTC\\LSTM_H1_F1_INTC.csv",
+    "table_tex": "..\\data\\Figures\\Tables\\INTC\\LSTM_H1_F1_INTC.tex"
+  }
+}

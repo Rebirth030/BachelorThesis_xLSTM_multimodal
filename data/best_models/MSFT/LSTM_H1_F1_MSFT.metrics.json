@@ -1,0 +1,39 @@
+{
+  "ticker": "MSFT",
+  "model_type": "LSTM",
+  "horizon": 1,
+  "feature_key": "F1",
+  "feature_cols": [
+    "Close"
+  ],
+  "n_features": 1,
+  "study_name": "LSTM_H1_F1",
+  "optuna_best_trial": {
+    "trial_number": 171,
+    "values": [
+      0.023422809059640486,
+      0.9761577844619751
+    ],
+    "params": {
+      "units": 64,
+      "lstm_layers": 2,
+      "dropout": 0.1,
+      "optimizer": "adamW",
+      "learning_rate": 0.001959489725330879
+    }
+  },
+  "test_level": {
+    "rmse": 5.657228946685791,
+    "r2": 0.9941244721412659
+  },
+  "artifacts": {
+    "checkpoint": "..\\data\\best_models\\MSFT\\LSTM_H1_F1_MSFT.pt",
+    "config": "..\\data\\best_models\\MSFT\\LSTM_H1_F1_MSFT.config.json",
+    "metrics": "..\\data\\best_models\\MSFT\\LSTM_H1_F1_MSFT.metrics.json",
+    "history": "..\\data\\best_models\\MSFT\\LSTM_H1_F1_MSFT.history.json",
+    "plot_pdf": "..\\data\\Figures\\Plots\\MSFT\\LSTM_H1_F1_MSFT.pdf",
+    "plot_png": "..\\data\\Figures\\Plots\\MSFT\\LSTM_H1_F1_MSFT.png",
+    "table_csv": "..\\data\\Figures\\Tables\\MSFT\\LSTM_H1_F1_MSFT.csv",
+    "table_tex": "..\\data\\Figures\\Tables\\MSFT\\LSTM_H1_F1_MSFT.tex"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "ticker": "JPM",
+  "model_type": "xLSTM",
+  "horizon": 15,
+  "feature_key": "F1",
+  "feature_cols": [
+    "Close"
+  ],
+  "n_features": 1,
+  "study_name": "xLSTM_H15_F1",
+  "optuna_best_trial": {
+    "trial_number": 177,
+    "values": [
+      0.06127614890899925,
+      0.8566215634346008
+    ],
+    "params": {
+      "units": 64,
+      "xlstm_num_blocks": 8,
+      "slstm_mode": "mixed",
+      "dropout": 0.0,
+      "optimizer": "adam",
+      "learning_rate": 0.002250041899458283,
+      "xlstm_mlstm_conv1d_kernel_size": 4,
+      "xlstm_mlstm_qkv_proj_blocksize": 2,
+      "xlstm_mlstm_proj_factor": 1.0,
+      "xlstm_mlstm_num_heads": 8,
+      "xlstm_slstm_conv1d_kernel": 4,
+      "xlstm_slstm_num_heads": 1
+    }
+  },
+  "test_level": {
+    "rmse": 6.581846237182617,
+    "r2": 0.9749078750610352
+  },
+  "artifacts": {
+    "checkpoint": "..\\data\\best_models\\JPM\\xLSTM_H15_F1_JPM.pt",
+    "config": "..\\data\\best_models\\JPM\\xLSTM_H15_F1_JPM.config.json",
+    "metrics": "..\\data\\best_models\\JPM\\xLSTM_H15_F1_JPM.metrics.json",
+    "history": "..\\data\\best_models\\JPM\\xLSTM_H15_F1_JPM.history.json",
+    "plot_pdf": "..\\data\\Figures\\Plots\\JPM\\xLSTM_H15_F1_JPM.pdf",
+    "plot_png": "..\\data\\Figures\\Plots\\JPM\\xLSTM_H15_F1_JPM.png",
+    "table_csv": "..\\data\\Figures\\Tables\\JPM\\xLSTM_H15_F1_JPM.csv",
+    "table_tex": "..\\data\\Figures\\Tables\\JPM\\xLSTM_H15_F1_JPM.tex"
+  }
+}

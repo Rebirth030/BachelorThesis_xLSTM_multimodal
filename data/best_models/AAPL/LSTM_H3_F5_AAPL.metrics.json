@@ -1,0 +1,43 @@
+{
+  "ticker": "AAPL",
+  "model_type": "LSTM",
+  "horizon": 3,
+  "feature_key": "F5",
+  "feature_cols": [
+    "Close",
+    "pos_mean",
+    "neut_mean",
+    "neg_mean",
+    "news_count"
+  ],
+  "n_features": 5,
+  "study_name": "LSTM_H3_F5",
+  "optuna_best_trial": {
+    "trial_number": 152,
+    "values": [
+      0.031926253186710545,
+      0.9565653204917908
+    ],
+    "params": {
+      "units": 128,
+      "lstm_layers": 3,
+      "dropout": 0.0,
+      "optimizer": "adam",
+      "learning_rate": 0.001765894414006415
+    }
+  },
+  "test_level": {
+    "rmse": 4.679686069488525,
+    "r2": 0.9777736067771912
+  },
+  "artifacts": {
+    "checkpoint": "..\\data\\best_models\\AAPL\\LSTM_H3_F5_AAPL.pt",
+    "config": "..\\data\\best_models\\AAPL\\LSTM_H3_F5_AAPL.config.json",
+    "metrics": "..\\data\\best_models\\AAPL\\LSTM_H3_F5_AAPL.metrics.json",
+    "history": "..\\data\\best_models\\AAPL\\LSTM_H3_F5_AAPL.history.json",
+    "plot_pdf": "..\\data\\Figures\\Plots\\AAPL\\LSTM_H3_F5_AAPL.pdf",
+    "plot_png": "..\\data\\Figures\\Plots\\AAPL\\LSTM_H3_F5_AAPL.png",
+    "table_csv": "..\\data\\Figures\\Tables\\AAPL\\LSTM_H3_F5_AAPL.csv",
+    "table_tex": "..\\data\\Figures\\Tables\\AAPL\\LSTM_H3_F5_AAPL.tex"
+  }
+}

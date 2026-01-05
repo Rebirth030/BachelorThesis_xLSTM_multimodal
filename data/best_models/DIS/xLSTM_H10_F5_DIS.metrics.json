@@ -1,0 +1,50 @@
+{
+  "ticker": "DIS",
+  "model_type": "xLSTM",
+  "horizon": 10,
+  "feature_key": "F5",
+  "feature_cols": [
+    "Close",
+    "pos_mean",
+    "neut_mean",
+    "neg_mean",
+    "news_count"
+  ],
+  "n_features": 5,
+  "study_name": "xLSTM_H10_F5",
+  "optuna_best_trial": {
+    "trial_number": 43,
+    "values": [
+      0.051517391522520044,
+      0.8939395546913147
+    ],
+    "params": {
+      "units": 64,
+      "xlstm_num_blocks": 8,
+      "slstm_mode": "m_only",
+      "dropout": 0.0,
+      "optimizer": "adamW",
+      "learning_rate": 0.0026082947623888224,
+      "xlstm_mlstm_conv1d_kernel_size": 2,
+      "xlstm_mlstm_qkv_proj_blocksize": 4,
+      "xlstm_mlstm_proj_factor": 2.0,
+      "xlstm_mlstm_num_heads": 4,
+      "xlstm_slstm_conv1d_kernel": 3,
+      "xlstm_slstm_num_heads": 4
+    }
+  },
+  "test_level": {
+    "rmse": 6.580705642700195,
+    "r2": 0.6659363508224487
+  },
+  "artifacts": {
+    "checkpoint": "..\\data\\best_models\\DIS\\xLSTM_H10_F5_DIS.pt",
+    "config": "..\\data\\best_models\\DIS\\xLSTM_H10_F5_DIS.config.json",
+    "metrics": "..\\data\\best_models\\DIS\\xLSTM_H10_F5_DIS.metrics.json",
+    "history": "..\\data\\best_models\\DIS\\xLSTM_H10_F5_DIS.history.json",
+    "plot_pdf": "..\\data\\Figures\\Plots\\DIS\\xLSTM_H10_F5_DIS.pdf",
+    "plot_png": "..\\data\\Figures\\Plots\\DIS\\xLSTM_H10_F5_DIS.png",
+    "table_csv": "..\\data\\Figures\\Tables\\DIS\\xLSTM_H10_F5_DIS.csv",
+    "table_tex": "..\\data\\Figures\\Tables\\DIS\\xLSTM_H10_F5_DIS.tex"
+  }
+}

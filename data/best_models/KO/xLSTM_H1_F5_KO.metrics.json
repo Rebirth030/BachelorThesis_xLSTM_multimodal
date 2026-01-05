@@ -1,0 +1,50 @@
+{
+  "ticker": "KO",
+  "model_type": "xLSTM",
+  "horizon": 1,
+  "feature_key": "F5",
+  "feature_cols": [
+    "Close",
+    "pos_mean",
+    "neut_mean",
+    "neg_mean",
+    "news_count"
+  ],
+  "n_features": 5,
+  "study_name": "xLSTM_H1_F5",
+  "optuna_best_trial": {
+    "trial_number": 89,
+    "values": [
+      0.026204866771879175,
+      0.9701576828956604
+    ],
+    "params": {
+      "units": 96,
+      "xlstm_num_blocks": 6,
+      "slstm_mode": "m_only",
+      "dropout": 0.0,
+      "optimizer": "adam",
+      "learning_rate": 0.0015432828388131615,
+      "xlstm_mlstm_conv1d_kernel_size": 2,
+      "xlstm_mlstm_qkv_proj_blocksize": 4,
+      "xlstm_mlstm_proj_factor": 2.0,
+      "xlstm_mlstm_num_heads": 2,
+      "xlstm_slstm_conv1d_kernel": 4,
+      "xlstm_slstm_num_heads": 4
+    }
+  },
+  "test_level": {
+    "rmse": 0.6673898100852966,
+    "r2": 0.9736649394035339
+  },
+  "artifacts": {
+    "checkpoint": "..\\data\\best_models\\KO\\xLSTM_H1_F5_KO.pt",
+    "config": "..\\data\\best_models\\KO\\xLSTM_H1_F5_KO.config.json",
+    "metrics": "..\\data\\best_models\\KO\\xLSTM_H1_F5_KO.metrics.json",
+    "history": "..\\data\\best_models\\KO\\xLSTM_H1_F5_KO.history.json",
+    "plot_pdf": "..\\data\\Figures\\Plots\\KO\\xLSTM_H1_F5_KO.pdf",
+    "plot_png": "..\\data\\Figures\\Plots\\KO\\xLSTM_H1_F5_KO.png",
+    "table_csv": "..\\data\\Figures\\Tables\\KO\\xLSTM_H1_F5_KO.csv",
+    "table_tex": "..\\data\\Figures\\Tables\\KO\\xLSTM_H1_F5_KO.tex"
+  }
+}

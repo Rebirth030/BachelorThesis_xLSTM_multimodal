@@ -1,0 +1,38 @@
+\begin{longtable}{lllrrrr}
+\caption{Test results for AAPL (RMSE and R\^2 on denormalised level).} \label{tab:results_AAPL} \\
+\toprule
+asset & model_type & feature_set & n_features & horizon & test_rmse_level & test_r2_level \\
+\midrule
+\endfirsthead
+\caption[]{Test results for AAPL (RMSE and R\^2 on denormalised level).} \\
+\toprule
+asset & model_type & feature_set & n_features & horizon & test_rmse_level & test_r2_level \\
+\midrule
+\endhead
+\midrule
+\multicolumn{7}{r}{Continued on next page} \\
+\midrule
+\endfoot
+\bottomrule
+\endlastfoot
+AAPL & LSTM & price_only & 1 & 1 & 2.9312 & 0.9913 \\
+AAPL & LSTM & price_only & 1 & 3 & 4.2058 & 0.9820 \\
+AAPL & LSTM & price_only & 1 & 5 & 5.0927 & 0.9736 \\
+AAPL & LSTM & price_only & 1 & 10 & 6.9805 & 0.9503 \\
+AAPL & LSTM & price_only & 1 & 15 & 9.0868 & 0.9156 \\
+AAPL & LSTM & price_plus_sentiment & 5 & 1 & 2.9876 & 0.9910 \\
+AAPL & LSTM & price_plus_sentiment & 5 & 3 & 4.6797 & 0.9778 \\
+AAPL & LSTM & price_plus_sentiment & 5 & 5 & 5.5016 & 0.9692 \\
+AAPL & LSTM & price_plus_sentiment & 5 & 10 & 8.0425 & 0.9340 \\
+AAPL & LSTM & price_plus_sentiment & 5 & 15 & 9.7266 & 0.9033 \\
+AAPL & xLSTM & price_only & 1 & 1 & 2.9638 & 0.9911 \\
+AAPL & xLSTM & price_only & 1 & 3 & 4.1482 & 0.9825 \\
+AAPL & xLSTM & price_only & 1 & 5 & 5.0549 & 0.9740 \\
+AAPL & xLSTM & price_only & 1 & 10 & 6.8448 & 0.9522 \\
+AAPL & xLSTM & price_only & 1 & 15 & 8.4340 & 0.9273 \\
+AAPL & xLSTM & price_plus_sentiment & 5 & 1 & 4.4284 & 0.9801 \\
+AAPL & xLSTM & price_plus_sentiment & 5 & 3 & 5.3098 & 0.9714 \\
+AAPL & xLSTM & price_plus_sentiment & 5 & 5 & 6.3070 & 0.9595 \\
+AAPL & xLSTM & price_plus_sentiment & 5 & 10 & 7.9383 & 0.9357 \\
+AAPL & xLSTM & price_plus_sentiment & 5 & 15 & 9.1252 & 0.9148 \\
+\end{longtable}
