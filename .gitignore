@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# Virtual Environment
+venv/
+ENV/
+env/
+
+# IDE
+.idea/
+.vscode/
+
+# Environment Variables
+.env
+
+# Optuna
+data/optuna_checkpoints/
+
+# Model Checkpoints
+src/model_code/LSTM/lstm_checkpoints/
+src/model_code/xLSTM/xlstm_checkpoints/
+models/
+
+# OS
+.DS_Store
+Thumbs.db
