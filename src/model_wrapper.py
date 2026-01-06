@@ -14,8 +14,8 @@ import torch.nn as nn
 import torch.optim as optim
 from torch.utils.data import TensorDataset, DataLoader
 
-from model_code.xLSTM.xLSTM import xLSTM
-from model_code.LSTM.LSTM import LSTM
+from xLSTM import xLSTM
+from LSTM import LSTM
 
 from data_prep import PrepAndDataLoader
 
