@@ -14,10 +14,10 @@ import torch.nn as nn
 import torch.optim as optim
 from torch.utils.data import TensorDataset, DataLoader
 
-from xLSTM import xLSTM
-from LSTM import LSTM
+from src.models.xLSTM import xLSTM
+from src.models.LSTM import LSTM
 
-from data_prep import PrepAndDataLoader
+from src.data_prep import PrepAndDataLoader
 
 
 class Timer:

@@ -1,0 +1,49 @@
+{
+  "random_seed": 42,
+
+  "data": {
+    "files": [
+      "../../data/ts_with_sentiment/AAPL_ts_with_sentiment.csv"
+    ],
+    "columns": ["Close"],
+    "target_col": "Close",
+    "training_split": 0.6,
+    "validation_split": 0.2,
+    "window_size": 60,
+    "horizons": [1, 3, 5, 10, 15, 30],
+    "normalise": true,
+    "norm_method": "percentage",
+    "stride": 1,
+    "learning_rate": 0.001,
+    "optimizer": ["adamW", "adam", "sgd"],
+    "dropout": 0.1,
+    "loss": "mse"
+  },
+
+  "LSTM_model": {
+    "lstm_layers": [1, 2, 3, 4],
+    "units": [32, 64, 128],
+    "save_dir": "../../checkpoints/lstm"
+  },
+
+  "xLSTM_model": {
+    "xlstm_num_blocks": [1, 2, 3, 4],
+    "xlstm_slstm_at": [[], [0], [1], [2], [3], [0,1], [1,2], [2,3]],
+    "units": [32, 64, 128],
+    "save_dir": "../../checkpoints/xlstm"
+  },
+
+  "training": {
+    "epochs": 100,
+    "batch_size": 128,
+    "patience": 10,
+    "monitor": "val_loss",
+    "verbose": 1
+  },
+
+  "plots": {
+    "save_plots": true,
+    "out_dir": "../../data/results/plots",
+    "num_examples": 3
+  }
+}
