@@ -45,8 +45,8 @@ data/optuna/checkpoints/
 # Model Checkpoints
 src/model_code/LSTM/lstm_checkpoints/
 src/model_code/xLSTM/xlstm_checkpoints/
-models/
-checkpoints/
+/models/
+/checkpoints/
 
 # OS
 .DS_Store
