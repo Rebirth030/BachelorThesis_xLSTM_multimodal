@@ -1,8 +1,8 @@
 # Vergleich von xLSTM und LSTM für multimodale Aktienkursvorhersage
 
 **Bachelor Thesis** — Angewandte Informatik (SPO 2)  
-Hochschule Heilbronn | Julian Martens | March 2026  
-Supervisors: Alexander Windberger, Florian Kauffeldt
+Julian Martens | March 2026  
+
 
 ---
 
